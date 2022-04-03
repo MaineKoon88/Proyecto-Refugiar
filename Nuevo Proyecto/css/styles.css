@@ -36,11 +36,43 @@ body{
   background: var(--bg);
 }
 
+.btn{
+  margin-top: .1rem;
+  display: inline-block;
+  padding: .9rem 3rem;
+  font-size: 1.7rem;
+  color: #fff;
+  background: var(--main-color);
+  cursor: pointer;
+}
+
+.btn:hover{
+  background: #fff;
+  color: var(--black);
+  transition: 1s ease;
+}
+
+
+
 section{
   padding: 2rem 7%;
 
 }
 
+.heading{
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 3.5rem;
+  font-size: 4rem;
+
+
+}
+
+.heading span{
+  color: var(--main-color);
+  text-transform: uppercase;
+}
 
 
 .header{
@@ -59,8 +91,8 @@ section{
   height: 8rem;
 }
 .header .navbar a{
-    margin:0 1rem;
-    font-size: 1.6rem;
+    margin:0 3rem;
+    font-size: 2rem;
     color:#fff;
 }
 .header .navbar a:hover{
@@ -134,6 +166,7 @@ section{
 }
 
 .home .content h3{
+  padding-top: 5rem;
   font-size: 6rem;
   text-transform: uppercase;
   color: #fff;
@@ -149,11 +182,41 @@ section{
 
 }
 
+.about .row{
+  display: flex;
+  align-content: center;
+  background: var(--black);
+  flex-wrap: wrap;
+
+}
+ .about .row .image{
+   flex:1 1 45rem;
+ }
+
+ .about .row .image img{
+   width: 100%;
+ }
+
+ .about .row .content{
+   flex:1 1 45rem;
+   padding: 2rem;
+ }
+
+.about .row .content h3{
+  font-size: 3rem;
+  color: #fff;
+
+}
+
+.about .row .content p{
+  font-size: 1.5rem;
+  color: #ccc;
+  padding: 1rem 0;
+  line-height: 1.8;
+  text-align: justify;
 
 
-
-
-
+}
 
 
 
@@ -256,8 +319,13 @@ section{
 .header .navbar{
   position: absolute;
   top: 100%; right: -100%;
-  background: #fff;
+  background: #FF8C00;
   width:  50rem;
+
+}
+
+.header .navbar:hover{
+background: #fff;
 
 }
 
@@ -270,13 +338,25 @@ section{
   display: block;
   margin: 1.5rem;
   padding: 5rem;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 .header .search-form{
   width: 90%;
   right: 2rem;
 }
 
+.home{
+  background-position: left;
+  justify-content: center;
+  text-align: center;
+}
+.home .content h3{
+  font-size: 4.5rem;
+}
+
+.home .content p{
+  font-size: 1.5rem;
+}
 
 }
 
